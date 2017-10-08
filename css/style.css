@@ -25,84 +25,81 @@ float: left;
 /*************SECTION WELCOME*********************/
 
 header {
-  background: black;
-  color: white;
-  height: 100%;
-  min-height: 50px;
-  font-size: 18px;
+background: black;
+color: white;
+height: 100%;
+min-height: 50px;
+font-size: 18px;
 }
 
 header .white {
-  color: white;
-  display: inline-block;
-  font-weight: bold;
+color: white;
+display: inline-block;
+font-weight: bold;
 }
 
 header .white:first-of-type {
-  margin-left: 50px;
-  margin-top: 10px;
+margin-left: 50px;
+margin-top: 10px;
 }
 
 header .green {
-  color: rgba(0, 193, 132, 1);
-  display: inline-block;
-  font-weight: bold;
+color: rgba(0, 193, 132, 1);
+display: inline-block;
+font-weight: bold;
 }
 
 header .col {
-  width: 50%;
+width: 50%;
 }
 
 
 header nav ul {
-    padding: .5em 0;
-    list-style-type: none;
+padding: .5em 0;
+list-style-type: none;
 }
 
 header nav ul>li {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    padding-bottom: 10px;
+display: inline-block;
+position: relative;
+z-index: 1;
+padding-bottom: 10px;
 }
 
 header nav ul li a {
-    padding: .4em;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+padding: .4em;
+color: white;
+text-decoration: none;
+font-weight: bold;
 }
 
 header nav ul ul {
-    display: none;
-    background-color: black;
-    padding-bottom: 10px;
+display: none;
+background-color: black;
+padding-bottom: 10px;
 }
 
 header nav ul li:hover ul {
-    position: absolute;
-    display: block;
-    top: 2.5em;
-    left: -1.4em;
-    text-transform: none;
-    padding: .4em 1em;
+position: absolute;
+display: block;
+top: 2.5em;
+left: -1.4em;
+text-transform: none;
+padding: .4em 1em;
 }
 
 header nav ul li:hover .triangle {
-    display: block;
+display: block;
 }
 
 header nav ul>li .triangle {
-    width: 0;
-    margin-right: auto;
-    margin-left: auto;
-    border: 12px solid transparent;
-    border-bottom-color: black;
-    display: none;
+width: 0;
+margin-right: auto;
+margin-left: auto;
+border: 12px solid transparent;
+border-bottom-color: black;
+display: none;
 }
-
-
-
 
 /****section 2 with black chair*******/
 #main {
@@ -117,83 +114,123 @@ background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 
+#main .col:nth-of-type(1) {
+width: 5%;
+}
+
+#main .col:nth-of-type(2) {
+width: 40%;
+}
+#main .col:nth-of-type(3) {
+width: 40%;
+}
+#main .col:nth-of-type(4) {
+width: 5%;
+}
+
 span {
-  color: rgba(0, 193, 132, 1);
+color: rgba(0, 193, 132, 1);
 }
 #arrow-left {
-  width: 3em;
-  height: 3em;
-  border-left: 0.2em solid rgba(0, 193, 132, 1);
-  border-bottom: 0.2em solid rgba(0, 193, 132, 1);
-  transform: rotate(45deg);
-  position: absolute;
-  margin-top: 120px;
-  margin-left: 30px;
+width: 3em;
+height: 3em;
+border-left: 0.2em solid rgba(0, 193, 132, 1);
+border-bottom: 0.2em solid rgba(0, 193, 132, 1);
+transform: rotate(45deg);
+margin-top: 140px;
+margin-left: 30px;
 }
 
-#arrow-right {
-    width: 3em;
-    height: 3em;
-    border-right: 0.2em solid rgba(0, 193, 132, 1);
-    border-top: 0.2em solid rgba(0, 193, 132, 1);
-    transform: rotate(45deg);
-    position: absolute;
 
+#arrow-right {
+width: 3em;
+height: 3em;
+border-right: 0.2em solid rgba(0, 193, 132, 1);
+border-top: 0.2em solid rgba(0, 193, 132, 1);
+transform: rotate(45deg);
+margin-top: 140px;
+margin-left: 80px;
 }
 
 #main button {
--webkit-border-radius: 11;
--moz-border-radius: 11;
 border-radius: 11px;
 color: white;
 font-size: 20px;
 padding: 10px 20px 10px 20px;
 text-decoration: none;
-background: rgba(0, 193, 132, 1)
+background: rgba(0, 193, 132, 1);
+margin-left: 120px;
 }
 
 #main p {
-  display: block;
+display: block;
+text-align: center;
 }
 
-#main .col {
-  width: 25%;
-}
 
 #main h1 {
-margin-top: 35px;
+margin-top: 80px;
 margin-bottom: 20px;
+text-align: center;
 }
 
 #main button {
-  margin-top: 30px;
+margin-top: 30px;
 }
 /****section 3 with other chair pictures********/
 #other_chairs {
 background: white;
-min-height: 50px;
-height: 100px;
+min-height: 150px;
+margin-bottom: 100px;
 }
 
 #other_chairs .col {
-  width: 33%;
+width: 33%;
 }
 
 #other_chairs article {
-  border: 1px solid darkgrey;
+border: 1px solid darkgrey;
+margin: 20px 5px 0px 5px;
+display: inline-block;
 }
+
+#other_chairs h4 {
+  display: inline-block;
+  border-bottom: 5px solid rgba(0, 193, 132, 1);
+
+}
+
+#other_chairs img {
+  margin-top: 20px;
+}
+
+article h4 {
+  margin: 10px 10px 10px 10px;
+}
+
+article p {
+  margin: 10px 20px 10px 10px;
+}
+
 /*****section 4 with price list**********/
 #price_list {
 background-color: rgba(229, 234, 221, 0.9);
 background: rgba(229, 234, 221, 0.9);
 /*color: rgba(229, 234, 221, 0.9); */
-min-height: 50px;
+min-height: 150px;
 height: 100%;}
 
 #price_list .col {
-  width:33%;
+width:33%;
+margin-left: 5px;
+}
+
+#price_list h4 {
+  display: inline-block;
+  border-bottom: 5px solid rgba(0, 193, 132, 1);
 }
 /******section 5 contact******************/
+
 #contact {
 background: white;
 min-height: 50px;
@@ -212,17 +249,52 @@ background: rgba(0, 193, 132, 1)
 }
 
 #contact .col {
-  width: 50%;
+width: 50%;
 }
+
+#contact h4 {
+  display: inline-block;
+  border-bottom: 5px solid rgba(0, 193, 132, 1);
+}
+
 /******section 6 footer******************/
 
 footer {
-  height: 100%;
-  min-height: 100px;
-  background: white;
-  padding: 10px 10px 10px 10px;
+height: 100%;
+min-height: 100px;
+background: white;
+padding: 10px 10px 10px 10px;
+margin-top: 10px;
 }
 
-footer .subcol:first-of-type {
+footer .col:first-of-type {
+  width: 50%;
+}
+
+footer .col:nth-of-type(2) {
+  width: 25%;
+  float: left;
+}
+
+footer .col:nth-of-type(3) {
+  width: 25%;
+}
+
+footer p {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+footer p:first-of-type {
+  border-right: 1px grey;
+}
+
+footer h3 {
   float: right;
+  text-align: center;
+}
+
+footer img {
+  align-items: center;
 }
