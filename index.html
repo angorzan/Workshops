@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>
-    Sit on chair
-  </title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
+    <title>
+        Sit on chair
+    </title>
+    </head>
 
 <body>
 
 <!--section 1 welcome------------------------------------------------------>
-      <section id= "welcome">
-
+  <section id= "welcome">
   <header>
-      <div class="row">
+
+      <div class="container row">
             <div class="col" id="logo">
                 <div class="white">SIT</div>
                 <div class="green">ON</div>
@@ -23,106 +23,116 @@
             </div>
 
     <!---menu panel-------------------------->
-            <div class="col" id="menu">
-
-                  <nav class="col">
-                        <ul>
-                          <li><a href="#">O FIRMIE</a>
+            <nav class="col" id="menu">
+                  <ul>
+                      <li>
+                        <a href="#">O FIRMIE</a>
+                        <div class="triangle"></div>
         <!--submenu---------------------->
-                                  <ul class= "submenu">
-                                      <li>Aktualności</li>
-                                      <li>Nasz team</li>
-                                      <li>Historia</li>
+                              <ul class= "submenu">
+                                  <li>Aktualności</li>
+                                  <li>Nasz team</li>
+                                  <li>Historia</li>
                                   </ul>
                           </li>
                           <li><a href="#">GALERIA</a></li>
                           <li><a href="#">KONTAKT</a></li>
                           </ul>
                 </nav>
-            </div>
+
       </div>
   </header>
 
       </section>
-<!--main section 2 with black chair------------------------------------------>
+<!--section 2 with black chair------------------------------------------>
 
-<main section id="black_chair">
-      <div class="row">
+<section id="main">
+      <div class="container">
+         <div class="row">
           <!---1st colimn with arrow--->
-            <div class="col">
-
-            </div>
+              <div class="col">
+                  a<!--<div id="arrow-left"></div>-->
+              </div>
           <!---2nd column with chair---->
-            <div class="col">
-                <img src="./images/black_chair.png" alt="black chair">
-            </div>
+              <div class="col">
+                  <img src="./images/black_chair.png" alt="black chair" id="black_chair">
+              </div>
           <!---3rd column with text----->
-            <div class="col">
-                  <h3>SIT ON OUR CHAIR</h3>
+
+              <div class="col">
+                  <h1>SIT <span>ON</span> OUR <span>CHAIR<span></h1>
                   <p>
-                      Sed semper felis nisl, at consectetur dolor vehicula ut. Nunc eget ligula sed dolor elementum accumsan. Donec finibus tellus non imperdiet eleifend. Aliquam sodales dolor vel egestas blandit. Sed posuere dapibus sollicitudin. Vivamus sed venenatis velit.
+                      Sed semper felis nisl, at consectetur dolor vehicula ut. Nunc eget ligula sed dolor elementum accumsan.
                   </p>
                   <button type="button">ZOBACZ WIĘCEJ</button>
             </div>
 
-          <!--4th column with arrow---->
+          <!--4th column arrow---->
             <div class="col">
-
+            b<!--<div id="arrow-right"></div>-->
             </div>
       </div>
+</div>
+
+
 </section>
-    <div class="clearfix"></div>
+
 
 <!--section 3 with other chair pictures-------------------------------------->
 <section id="other_chairs">
-      <div class="row">
-            <img class="col" src="./images/box1_img.jpg"  alt="white chair">
+      <div class="container">
+        <div class="row">
+        <div class="col">
+            <img src="./images/box1_img.jpg"  alt="white chair">
             <h4>Chair CLAIR</h4>
-            <img class="col" src="./images/box2_img.jpg" alt="baby">
+          </div>
+          <div class="col">
+            <img  src="./images/box2_img.jpg" alt="baby">
             <h4>Chair MARGARITA</h4>
+          </div>
             <article class="col">
               <h4>Finds all inputs</h4>
               <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros consequat, sollicitudin odio id, commodo arcu. Morbi mattis tellus ac cursus tincidunt. Nulla facilisi. Suspendisse tincidunt turpis ante, vitae rhoncus odio fermentum et. Sed viverra pulvinar mollis. Fusce quis risus commodo, dignissim ante a, luctus tellus. Etiam vel consectetur urna. Nullam aliquet erat condimentum arcu commodo, quis ornare ipsum elementum. Fusce iaculis justo laoreet nisl feugiat volutpat. Cras id nisi lectus.
               </p>
             </article>
+          </div>
       </div>
-
+</section>
 <!--section 4 with price list------------------------------------------------->
-<section id="price list">
-    <div class="container row">
-      <h3>CENNIK
+<section id="price_list">
+    <div class="container">
+
+    <div class="row">
+        <h3>CENNIK
       </h3>
     </div>
     <!--3 types of plan-->
-    <div class="three_boxes">
-    <div class="clearfix"></div>
+    <div class="row">
             <!--1st box with plan-->
-          <div class="boxinfo">
-              <div class="row">
+          <div class="col">
+
                  <h3>BASIC PLAN
                  </h3>
                  <p>85<span>99</span><br>
                    PLN/MSC</p>
-              </div>
+
           </div>
           <!--2nd box with plan-->
-          <div class="boxinfo">
-              <div class="row">
+          <div class="col">
                  <h3>STANDARD PLAN
                  </h3>
                  <p>95<span>99</span><br>
                    PLN/MSC</p>
-              </div>
           </div>
           <!--3rd box with plan-->
-          <div class="boxinfo">
-              <div class="row">
+          <div class="col">
+
                  <h3>ADVANCE PLAN
                  </h3>
                  <p>211<span>00</span><br>
                    PLN/MSC</p>
-              </div>
+
           </div>
 
 
@@ -133,12 +143,14 @@
 <!---section 5 contact--------------------------------------------------------->
     <section id="contact">
         <div class="container">
-              <div class="row">
-                  <h2>
+
+                  <h2 class="row">
                     KONTAKT
                   </h2>
+                  <div class="row">
                     <div class="col">
                   <!---form------------>
+                  aaa
                           <form action="">
                           </form>
                     </div>
@@ -156,7 +168,7 @@
     </section>
 <!--section 6 footer---------------------------------------------------------->
 <footer id="footer">
-      <div class="container">
+      <div class="container row">
         <!---left column------->
           <div class="col">
                   <p>
@@ -172,10 +184,10 @@
           <!---right column-------------->
           <div class="col">
                 <div class="subcol">
-                  <img src=""./images/flickr.png" alt="flickr">
-                  <img src=""./images/vimeo.png" alt="vimeo">
-                  <img src=""./images/pinterest.png" alt="pinterest">
-                  <img src=""./images/twitter.png" alt="twitter">
+                  <img src="./images/flickr.png" alt="flickr">
+                  <img src="./images/vimeo.png" alt="vimeo">
+                  <img src="./images/pinterest.png" alt="pinterest">
+                  <img src="./images/twitter.png" alt="twitter">
                 </div>
                 <div class="subcol">
                   <h3>
@@ -186,5 +198,6 @@
       </div>
 </footer>
 <!---end of footer------------------------------------------------------------>
+
 </body>
 </html>

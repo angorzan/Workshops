@@ -1,38 +1,25 @@
 /*CSS RESET***************************************/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.container {
-  margin-left: 0 auto;
-  width: 100%;
-  max-width: 920px;
-  height: auto;
-  background-color: black;
-  border: 1px solid black;
+.container{
+width: 100%;
+max-width: 1050px;
+margin: 0 auto;
 }
 
-.row ::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.row::after{
+content: "";
+clear: both;
+display: block;
 }
 
 .col {
-  float: left;
-}
-
-.subcol {
-  float: left;
+float: left;
 }
 
 /*************SECTION WELCOME*********************/
@@ -66,29 +53,61 @@ header .col {
   width: 50%;
 }
 
-header nav {
-  float: right;
+
+header nav ul {
+    padding: .5em 0;
+    list-style-type: none;
 }
 
-header ul:not(.submenu) li{
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  list-style: none;
-  float: right;
+header nav ul>li {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 10px;
 }
 
-header
-li:hover .submenu{
-background-color: black;
-display: block;
-list-style: none;
+header nav ul li a {
+    padding: .4em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/****main section 2 with black chair*******/
-#black_chair {
+header nav ul ul {
+    display: none;
+    background-color: black;
+    padding-bottom: 10px;
+}
 
+header nav ul li:hover ul {
+    position: absolute;
+    display: block;
+    top: 2.5em;
+    left: -1.4em;
+    text-transform: none;
+    padding: .4em 1em;
+}
+
+header nav ul li:hover .triangle {
+    display: block;
+}
+
+header nav ul>li .triangle {
+    width: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 12px solid transparent;
+    border-bottom-color: black;
+    display: none;
+}
+
+
+
+
+/****section 2 with black chair*******/
+#main {
 padding-bottom: 50px;
+width: 100%;
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+47 */
 background: rgb(255,255,255); /* Old browsers */
@@ -98,10 +117,31 @@ background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 
+span {
+  color: rgba(0, 193, 132, 1);
+}
+#arrow-left {
+  width: 3em;
+  height: 3em;
+  border-left: 0.2em solid rgba(0, 193, 132, 1);
+  border-bottom: 0.2em solid rgba(0, 193, 132, 1);
+  transform: rotate(45deg);
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 30px;
+}
 
+#arrow-right {
+    width: 3em;
+    height: 3em;
+    border-right: 0.2em solid rgba(0, 193, 132, 1);
+    border-top: 0.2em solid rgba(0, 193, 132, 1);
+    transform: rotate(45deg);
+    position: absolute;
 
+}
 
-#black_chair button {
+#main button {
 -webkit-border-radius: 11;
 -moz-border-radius: 11;
 border-radius: 11px;
@@ -112,14 +152,22 @@ text-decoration: none;
 background: rgba(0, 193, 132, 1)
 }
 
-#black_chair h3 {
+#main p {
   display: block;
 }
 
-#black_chair p {
-  display: block;
+#main .col {
+  width: 25%;
 }
 
+#main h1 {
+margin-top: 35px;
+margin-bottom: 20px;
+}
+
+#main button {
+  margin-top: 30px;
+}
 /****section 3 with other chair pictures********/
 #other_chairs {
 background: white;
@@ -127,17 +175,24 @@ min-height: 50px;
 height: 100px;
 }
 
+#other_chairs .col {
+  width: 33%;
+}
 
-
+#other_chairs article {
+  border: 1px solid darkgrey;
+}
 /*****section 4 with price list**********/
 #price_list {
 background-color: rgba(229, 234, 221, 0.9);
 background: rgba(229, 234, 221, 0.9);
-color: rgba(229, 234, 221, 0.9);
+/*color: rgba(229, 234, 221, 0.9); */
 min-height: 50px;
 height: 100%;}
 
-
+#price_list .col {
+  width:33%;
+}
 /******section 5 contact******************/
 #contact {
 background: white;
@@ -156,10 +211,18 @@ text-decoration: none;
 background: rgba(0, 193, 132, 1)
 }
 
+#contact .col {
+  width: 50%;
+}
 /******section 6 footer******************/
 
-#footer {
+footer {
   height: 100%;
   min-height: 100px;
   background: white;
+  padding: 10px 10px 10px 10px;
+}
+
+footer .subcol:first-of-type {
+  float: right;
 }
