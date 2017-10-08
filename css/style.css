@@ -1,0 +1,165 @@
+/*CSS RESET***************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin-left: 0 auto;
+  width: 100%;
+  max-width: 920px;
+  height: auto;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.row ::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+.subcol {
+  float: left;
+}
+
+/*************SECTION WELCOME*********************/
+
+header {
+  background: black;
+  color: white;
+  height: 100%;
+  min-height: 50px;
+  font-size: 18px;
+}
+
+header .white {
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+}
+
+header .white:first-of-type {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+header .green {
+  color: rgba(0, 193, 132, 1);
+  display: inline-block;
+  font-weight: bold;
+}
+
+header .col {
+  width: 50%;
+}
+
+header nav {
+  float: right;
+}
+
+header ul:not(.submenu) li{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  float: right;
+}
+
+header
+li:hover .submenu{
+background-color: black;
+display: block;
+list-style: none;
+}
+
+/****main section 2 with black chair*******/
+#black_chair {
+
+padding-bottom: 50px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+47 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 47%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 47%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 47%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+#black_chair button {
+-webkit-border-radius: 11;
+-moz-border-radius: 11;
+border-radius: 11px;
+color: white;
+font-size: 20px;
+padding: 10px 20px 10px 20px;
+text-decoration: none;
+background: rgba(0, 193, 132, 1)
+}
+
+#black_chair h3 {
+  display: block;
+}
+
+#black_chair p {
+  display: block;
+}
+
+/****section 3 with other chair pictures********/
+#other_chairs {
+background: white;
+min-height: 50px;
+height: 100px;
+}
+
+
+
+/*****section 4 with price list**********/
+#price_list {
+background-color: rgba(229, 234, 221, 0.9);
+background: rgba(229, 234, 221, 0.9);
+color: rgba(229, 234, 221, 0.9);
+min-height: 50px;
+height: 100%;}
+
+
+/******section 5 contact******************/
+#contact {
+background: white;
+min-height: 50px;
+height: 100%;
+}
+
+#contact button {
+-webkit-border-radius: 11;
+-moz-border-radius: 11;
+border-radius: 11px;
+color: white;
+font-size: 20px;
+padding: 10px 20px 10px 20px;
+text-decoration: none;
+background: rgba(0, 193, 132, 1)
+}
+
+/******section 6 footer******************/
+
+#footer {
+  height: 100%;
+  min-height: 100px;
+  background: white;
+}
