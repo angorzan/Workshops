@@ -1,0 +1,511 @@
+/*CSS RESET***************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col {
+  float: left;
+}
+
+/*************SECTION WELCOME*********************/
+
+header {
+  background: black;
+  color: white;
+  height: 100%;
+  min-height: 50px;
+  font-size: 18px;
+  .white {
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    &:first-of-type {
+      margin-left: 50px;
+      margin-top: 10px;
+
+    }
+  }
+  .green {
+    color: rgba(0, 210, 174, 1);
+    display: inline-block;
+    font-weight: bold;
+    }
+  .col {
+   width: 50%;
+  }
+  nav ul {
+    padding: .5em 0;
+    list-style-type: none;
+      & >li {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 10px;
+      }
+      & li a {
+        padding: .4em;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      & ul {
+        display: none;
+        background-color: black;
+        padding-bottom: 10px;
+        margin-top: 10px;
+
+      }
+      & li:hover ul {
+        position: absolute;
+        display: block;
+        top: 2.5em;
+        left: -1.4em;
+        text-transform: none;
+        padding: .4em 1em;
+      }
+
+      & li:hover .triangle {
+        display: block;
+      }
+}
+
+
+
+
+
+header nav ul>li .triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 40px;
+  left: 35px;
+  border: 12px solid transparent;
+  border-bottom-color: black;
+  display: none;
+  position: absolute;
+}
+
+
+/****section 2 with black chair*******/
+#main {
+  padding-bottom: 50px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+47 */
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 47%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 47%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 47%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+#main .col:nth-of-type(1) {
+  width: 5%;
+}
+
+#main .col:nth-of-type(2) {
+  width: 40%;
+}
+#main .col:nth-of-type(3) {
+  width: 40%;
+}
+#main .col:nth-of-type(4) {
+  width: 5%;
+}
+
+span {
+  color: rgba(0, 193, 132, 1);
+}
+#arrow-left {
+  width: 3em;
+  height: 3em;
+  border-left: 0.2em solid rgba(0, 210, 174, 1);
+  border-bottom: 0.2em solid rgba(0, 210, 174, 1);
+  transform: rotate(45deg);
+  margin-top: 140px;
+  margin-left: 30px;
+}
+
+
+#arrow-right {
+  width: 3em;
+  height: 3em;
+  border-right: 0.2em solid rgba(0, 210, 174, 1);
+  border-top: 0.2em solid rgba(0, 210, 174, 1);
+  transform: rotate(45deg);
+  margin-top: 140px;
+  margin-left: 80px;
+}
+
+#main button {
+  border-radius: 11px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  background: rgba(0, 210, 174, 1);
+  margin-left: 120px;
+}
+
+#main p {
+  display: block;
+  text-align: center;
+}
+
+
+#main h1 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#main button {
+  margin-top: 30px;
+}
+/****section 3 with other chair pictures********/
+#other_chairs {
+  background: white;
+  min-height: 150px;
+  margin-bottom: 100px;
+}
+
+#other_chairs .col {
+  width: 30%;
+}
+
+#other_chairs article {
+  border: 1px solid darkgrey;
+  margin: 20px 5px 0px 5px;
+  display: inline-block;
+}
+
+#other_chairs h4 {
+  display: inline-block;
+  border-bottom: 5px solid rgba(0, 210, 174, 1);
+
+}
+
+#other_chairs img {
+  margin-top: 20px;
+}
+
+article {
+  display: block;
+  position: relative;
+  margin-left: 15px;
+}
+article h4 {
+  margin: 10px 10px 10px 10px;
+}
+
+article p {
+  margin: 10px 20px 10px 10px;
+}
+
+.clair  {
+  position: relative;
+  font-weight: bold;
+  padding-right: 50px;
+  bottom: 60px;
+  left: 10px;
+}
+.margarita {
+  position: relative;
+  font-weight: bold;
+  padding-right: 50px;
+  bottom: 60px;
+  left: 10px;
+}
+/*****section 4 with price list**********/
+/*<!--    SEKCJA BLOKOW CENOWYCH    -->*/
+
+#cennik .container {
+  height: 730px;
+  background-color: #f1f1f1;
+  padding: 66px;
+  margin-bottom: 60px;
+}
+
+.cennik-title h3 span {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.greenline2 {
+  width: 320px;
+  background-color: #27c7ab;
+  height: 7px;
+  margin-bottom: 30px;
+}
+
+.tripple {
+  padding-top: 50px;
+}
+
+.nice-one {
+  position: relative;
+  display: block;
+  border: 2px solid #d5d5d5;
+  width: 30%;
+  height: 500px;
+  float: left;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding-top: 30px;
+  margin-right: 30px;
+
+}
+
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #27c7ab;
+  font-weight: normal;
+
+}
+
+.circle {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  border: 2px solid #d5d5d5;
+  display: block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-color: #f9f9f9;
+
+}
+
+.circle2 {
+  position: absolute;
+  top: -22px;
+  left: 0px;
+  right: 0;
+  margin: auto auto;
+  border: 0px solid #d5d5d5;
+  display: block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  float: left;
+  background-color: #c2c2c2;
+
+}
+
+.circle3 {
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 2px solid #d5d5d5;
+  display: block;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  float: left;
+  background-color: #f9f9f9;
+  padding-top: 25px;
+}
+
+.cena {
+  color: #c2c2c2;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cena .eightyfive {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.cena .ninetynine {
+  font-size: 15px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+
+.menu {
+  padding-top: 180px;
+}
+
+.menu ul li {
+  color: #b7b7b7;
+  font-size: 24px;
+  list-style-type: none;
+
+}
+
+.grey {
+  width: 100%;
+  background-color: #e4e4e4;
+  line-height: 43px;
+  color: #939393;
+}
+
+.grey-soft {
+  width: 100%;
+  background-color: #f1f1f1;
+  line-height: 43px;
+  color: #787878;
+}
+
+.button2 {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  margin: auto 0;
+  width: 122px;
+  height: 35px;
+  background-color: #24baa0;
+  border-radius: 9px;
+  box-shadow: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/******section 5 contact******************/
+
+#contact {
+  background: white;
+  min-height: 50px;
+  height: 100%;
+  padding-top: 40px;
+}
+
+
+#contact button {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  background: rgba(0, 210, 174, 1);
+  margin-top: 20px;
+  width: 100%;
+}
+
+#contact .col {
+  width: 50%;
+}
+
+#contact h4 {
+  display: inline-block;
+  border-bottom: 5px solid rgba(0, 210, 174, 1);
+  color: darkgrey;
+}
+
+
+#contact form input:first-of-type{
+  margin-top: 30px;
+  height: 50px;
+  border-color: rgba(0, 210, 174, 1);
+  max-width: 100%;
+}
+
+#contact form input:nth-of-type(2){
+  height: 50px;
+  border-left: rgba(0, 210, 174, 1);
+  border-right: rgba(0, 210, 174, 1);
+  width: 100%;
+}
+
+#contact form input:nth-of-type(3){
+  height: 350px;
+  border-left-color: rgba(0, 210, 174, 1);
+  border-right-color: rgba(0, 210, 174, 1);
+  border-bottom-color: rgba(0, 210, 174, 1);
+  width: 100%;
+}
+
+#red_chair {
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+#contact p {
+  color: grey;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+#ok {
+  float: left;
+  margin-top: 260px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+/******section 6 footer******************/
+
+footer {
+  height: 100%;
+  min-height: 100px;
+  background: white;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+}
+
+footer .col:first-of-type {
+  width: 50%;
+}
+
+footer .col:nth-of-type(2) {
+  width: 25%;
+  float: left;
+}
+
+footer .col:nth-of-type(3) {
+  width: 25%;
+}
+
+footer p {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  color: grey;
+}
+
+footer p:first-of-type {
+  border-right: 1px grey;
+}
+
+footer h3 {
+  float: right;
+  text-align: center;
+  color: grey;
+}
+
+footer img {
+  align-items: center;
+}
