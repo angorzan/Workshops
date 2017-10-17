@@ -182,11 +182,13 @@ span {
 #other_chairs {
   background: white;
   min-height: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 #other_chairs .col {
   width: 30%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #other_chairs article {
@@ -216,6 +218,7 @@ article h4 {
 
 article p {
   margin: 10px 20px 10px 10px;
+  padding-bottom: 9px;
 }
 
 .clair  {
@@ -235,11 +238,16 @@ article p {
 /*****section 4 with price list**********/
 /*<!--    SEKCJA BLOKOW CENOWYCH    -->*/
 
-#cennik .container {
-  height: 730px;
+#price_list {
+  width: 100%;
   background-color: #f1f1f1;
+}
+
+#price_list .container {
+  height: 730px;
   padding: 66px;
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .cennik-title h3 span {
@@ -407,12 +415,15 @@ h2 {
   -moz-border-radius: 11;
   border-radius: 11px;
   color: white;
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: bold;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   background: rgba(0, 210, 174, 1);
-  margin-top: 20px;
+  height: 80px;
   width: 100%;
+  margin-left: 20px;
+  margin-top: 35px;
 }
 
 #contact .col {
@@ -425,32 +436,40 @@ h2 {
   color: darkgrey;
 }
 
+#contact form input placeholder {
+  font-size: 24px;
+  padding-left: 10px;
+}
 
 #contact form input:first-of-type{
   margin-top: 30px;
   height: 50px;
   border-color: rgba(0, 210, 174, 1);
-  max-width: 100%;
+  width: 100%;
+  padding-left: 40px;
+  font-size: 26px;
 }
 
 #contact form input:nth-of-type(2){
   height: 50px;
-  border-left: rgba(0, 210, 174, 1);
-  border-right: rgba(0, 210, 174, 1);
+  border-color: rgba(0, 210, 174, 1);
   width: 100%;
+  padding-left: 40px;
+  font-size: 26px;
 }
 
 #contact form input:nth-of-type(3){
   height: 350px;
-  border-left-color: rgba(0, 210, 174, 1);
-  border-right-color: rgba(0, 210, 174, 1);
-  border-bottom-color: rgba(0, 210, 174, 1);
+  border-color: rgba(0, 210, 174, 1);
   width: 100%;
+  padding-left: 40px;
+  font-size: 26px;
 }
 
 #red_chair {
   margin-left: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  margin-top: 20px;
 }
 
 #contact p {
@@ -461,7 +480,7 @@ h2 {
 
 #ok {
   float: left;
-  margin-top: 260px;
+  margin-top: 300px;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 20px;
@@ -474,7 +493,7 @@ footer {
   min-height: 100px;
   background: white;
   padding: 10px 10px 10px 10px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 footer .col:first-of-type {
