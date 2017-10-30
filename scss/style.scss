@@ -71,18 +71,18 @@ header {
       margin-top: 10px;
 
     }
-    & li:hover ul {
+    & li ul {
       position: absolute;
-      display: block;
+      display: none;
       top: 2.5em;
       left: -1.4em;
       text-transform: none;
       padding: .4em 1em;
     }
 
-    & li:hover .triangle {
+    & li .triangle {
       display: block;
-    }
+    } //changed for js event
   }
 }
 
@@ -98,7 +98,7 @@ header nav ul>li .triangle {
   left: 35px;
   border: 12px solid transparent;
   border-bottom-color: black;
-  display: none;
+  display: block;
   position: absolute;
 }
 
@@ -120,10 +120,12 @@ header nav ul>li .triangle {
 }
 
 #main .col:nth-of-type(2) {
-  width: 40%;
+  width: 50%;
 }
 #main .col:nth-of-type(3) {
   width: 40%;
+  display: flex;
+  align-items: center;
 }
 #main .col:nth-of-type(4) {
   width: 5%;
@@ -160,12 +162,11 @@ span {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   background: rgba(0, 210, 174, 1);
-  margin-left: 120px;
+
 }
 
 #main p {
   display: block;
-  text-align: center;
 }
 
 
@@ -177,6 +178,23 @@ span {
 
 #main button {
   margin-top: 30px;
+}
+
+.slider ul{
+  list-style: none;
+}
+
+.slider li{
+  display: none;
+}
+
+.slider .visible{
+  display: inline-block;
+}
+
+#black_chair, #orange_chair, #red_ch {
+  height: 470px;
+  width: 337px;
 }
 /****section 3 with other chair pictures********/
 #other_chairs {
@@ -448,6 +466,7 @@ h2 {
   width: 100%;
   padding-left: 40px;
   font-size: 26px;
+  margin-bottom: 10px;
 }
 
 #contact form input:nth-of-type(2){
@@ -456,6 +475,7 @@ h2 {
   width: 100%;
   padding-left: 40px;
   font-size: 26px;
+  margin-bottom: 10px;
 }
 
 #contact form input:nth-of-type(3){
@@ -464,6 +484,7 @@ h2 {
   width: 100%;
   padding-left: 40px;
   font-size: 26px;
+  margin-bottom: 10px;
 }
 
 #red_chair {
@@ -493,8 +514,7 @@ footer {
   min-height: 100px;
   background: white;
   padding: 10px 10px 10px 10px;
-  margin-top: 50px;
-}
+  }
 
 footer .col:first-of-type {
   width: 50%;
